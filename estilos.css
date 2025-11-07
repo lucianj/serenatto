@@ -55,16 +55,27 @@ input[type=checkbox]:focus {
 }
 
 .input-range::-webkit-slider-thumb{
-    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+  -webkit-appearance: none;
   appearance: none;
-  width: 20px; /* Largura do polegar */
-  height: 20px; /* Altura do polegar */
-  background-color: var(--marrom-claro); /* Usa a variável --marrom-claro */
+  width: 20px; 
+  height: 20px; 
+  background-color: var(--marrom-claro);
   cursor: pointer; /* Muda o cursor para "mãozinha" */
-  border-radius: 30%; /* Formato circular */
-  margin-top: -6px; /* Ajusta a posição vertical para centralizar na trilha */
+  border-radius: 50%; 
+  margin-top: -6px; 
 }
 
 footer{
   background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link, .card-body, .offcanvas, .accordion, .btn {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+    --bs-body-color: white;
+  }
 }
